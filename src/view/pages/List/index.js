@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import {PageContainer} from "../../../styled/Common";
-import VisualBanner from "../../components/banner/visualBanner";
-import EventBanner from "../../components/banner/eventBanner";
+import VisualBanner from "../../components/Banner/visualBanner";
+import EventBanner from "../../components/Banner/eventBanner";
 import {IconSvg} from "../../../svg";
-import NewList from "../../components/newList";
+import NewList from "../../components/NewList";
 
 const List = () => {
 

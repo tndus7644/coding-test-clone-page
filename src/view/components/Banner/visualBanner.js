@@ -25,7 +25,7 @@ const Title = styled.h3`
   z-index: 50;
   bottom: 0;
   left: 0;
-  color: #fff;
+  color: ${props => props.theme.GrayScale09};
   line-height: 27px;
   font-size: 18px;
   font-weight: 500;

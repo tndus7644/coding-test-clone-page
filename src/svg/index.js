@@ -68,3 +68,12 @@ export const OnStar = () => {
         </g>
     )
 }
+
+export const Back = () => {
+    return(
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path fillRule={"evenodd"} stroke="#000" strokeWidth={"0.5px"} d="M20.3 9.7a.689.689 0 0 0-.689-.689H3.354l4.339-4.333a.69.69 0 1 0-.976-.978L1.2 9.217a.689.689 0 0 0 0 .976l5.515 5.515a.69.69 0 0 0 .976-.976l-4.337-4.338h16.26A.689.689 0 0 0 20.3 9.7z" transform="translate(1.826 1.98)"/>
+        </svg>
+    )
+}

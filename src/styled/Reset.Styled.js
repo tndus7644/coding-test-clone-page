@@ -64,4 +64,14 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     vertical-align: middle;
   }
+  
+  button{
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+
+    &:focus{
+      outline: 0;
+    }
+  }
 `;

@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {ContentContainer, PageContainer} from "../../../styled/Common";
 import {IconSvg} from "../../../svg";
-import LoginForm from "../../components/loginForm";
+import LoginForm from "../../components/LoginForm";
+import {navigate} from "../../../lib/History";
 
 const Login = () => {
 
@@ -14,7 +15,7 @@ const Login = () => {
                 </Icon>
                 <LoginForm/>
                 <User>
-                    <p>*회원가입</p>
+                    <p onClick={() => navigate("/login/email")}>*회원가입</p>
                     <p>*ID / PW 찾기</p>
                 </User>
             </Content>
@@ -50,8 +51,8 @@ const Icon = styled.div`
 const User = styled.div`
   display: flex;
   justify-content: flex-end;
-  color: #3d3d3d;
   margin-top: 12px;
+  color: ${props => props.theme.GrayScale02};
 
   p {
     font-size: 12px;

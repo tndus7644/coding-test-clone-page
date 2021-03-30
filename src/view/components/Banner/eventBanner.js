@@ -23,7 +23,7 @@ const Title = styled.h3`
   top: 37px;
   right: 28px;
   z-index: 100;
-  color: #fff;
+  color: ${props => props.theme.GrayScale09};
   font-weight: 500;
   font-size: 18px;
 `;

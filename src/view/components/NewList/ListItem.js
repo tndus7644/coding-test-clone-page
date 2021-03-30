@@ -20,7 +20,7 @@ const Title = styled.p`
   padding-top: 8px;
 
   span {
-    color: #226bef;
+    color: ${props => props.theme.MainColor};
     font-size: 14px;
   }
 `;

@@ -8,10 +8,9 @@ const PageNavigate = () => {
         <Container ClassName={"PageNavigate"}>
             <Title>구현한 페이지 목록</Title>
             <ButtonGroup>
-                <PageButton to={"/loginForm"}>회원가입</PageButton>
+                <PageButton to={"/login"}>회원가입</PageButton>
                 <PageButton to={"/list"}>제품목록</PageButton>
                 <PageButton to={"/upload"}>등록하기</PageButton>
-
             </ButtonGroup>
         </Container>
     )
@@ -22,7 +21,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #226bef;
+  color: ${props => props.theme.MainColor};
   margin-top: 50px;
   display: flex;
   justify-content: center;

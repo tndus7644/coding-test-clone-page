@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {GlobalButton} from "../../../styled/Button.Styled";
+import {InputStyle} from "../../../styled/Common";
 
 const LoginForm = () => {
 
@@ -8,10 +9,10 @@ const LoginForm = () => {
         <Container>
             <Form method={"post"}>
                 <Label htmlFor="loginId">
-                    <Input type="email" id="loginId" name="loginId" placeholder="로그인"/>
+                    <InputStyle type="email" id="loginId" name="loginId" placeholder="로그인"/>
                 </Label>
                 <Label htmlFor="loginPw">
-                    <Input type="password" id="loginPw" name="password" placeholder="비밀번호"/>
+                    <InputStyle type="password" id="loginPw" name="password" placeholder="비밀번호"/>
                 </Label>
                 <Button type="submit" disabled="disabled">로그인</Button>
             </Form>
@@ -32,22 +33,10 @@ const Label = styled.label`
   margin-bottom: 12px;
 `;
 
-const Input = styled.input`
-  width: 100%;
-  padding: 14px 12px;
-  border-radius: 8px;
-  background: #fff;
-  border: 1px solid #eaeaea;
-
-  &:focus {
-    outline: 0;
-  }
-`;
-
 const Button = styled(GlobalButton)`
   margin-top: 4px;
-  background: #226bef;
-  color: #fff;
+  background: ${props => props.theme.MainColor};
+  color: ${props => props.theme.GrayScale09};
   height: 56px;
   font-size: 15px;
   border-radius: 8px;

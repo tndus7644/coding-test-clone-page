@@ -6,6 +6,7 @@ export const PageContainer = styled.div`
   min-height: 100vh;
   border: 1px solid #ddd;
   margin: 40px auto;
+  padding: 0 13px;
 `;
 
 export const Overlay = styled.div`
@@ -20,5 +21,17 @@ export const Overlay = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  padding: 0 13px;
+`;
+
+export const InputStyle = styled.input`
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 8px;
+  background: ${props => props.theme.GrayScale09};;
+  border: 1px solid ${props => props.theme.GrayScale07};
+  color: ${props => props.theme.GrayScale06};
+
+  &:focus {
+    outline: 0;
+  }
 `;

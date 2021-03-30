@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {ContentContainer} from "../../../styled/Common";
-import Layout from "../layout";
+import Layout from "../Layout";
 import ListItem from "./ListItem";
 import {NewItemData} from "./NewItemData";
 
