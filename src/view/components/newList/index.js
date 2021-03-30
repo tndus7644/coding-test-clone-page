@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ListContainer} from "../../../styled/Common";
+import {ContentContainer} from "../../../styled/Common";
 import Layout from "../layout";
 import ListItem from "./ListItem";
 import {NewItemData} from "./NewItemData";
@@ -22,7 +22,7 @@ const NewList = () => {
     )
 }
 
-const Container = styled(ListContainer)`
+const Container = styled(ContentContainer)`
   padding-top: 24px;
 `;
 

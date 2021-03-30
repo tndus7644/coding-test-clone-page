@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const PageContainer = styled.div`
   width: 374px;
+  height: 100%;
+  min-height: 100vh;
   border: 1px solid #ddd;
   margin: 40px auto;
 `;
@@ -17,6 +19,6 @@ export const Overlay = styled.div`
   background-color: rgba(0, 0, 0, ${props => (props.alpha || 0.6)});
 `;
 
-export const ListContainer = styled.div`
+export const ContentContainer = styled.div`
   padding: 0 13px;
 `;

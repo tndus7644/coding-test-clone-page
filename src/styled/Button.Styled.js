@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
+export const GlobalButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background: none;
+`;
+
 export const PageButton = styled(Link)`
   background: #226bef;
   color: #fff;

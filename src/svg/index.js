@@ -2,7 +2,7 @@ import React from 'react';
 
 export const IconSvg = () => {
     return(
-        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="21" viewBox="0 0 80 21">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="21" viewBox="0 0 80 21" fill={"#226bef"}>
             <g id="그룹_73425" transform="translate(-143 -353)">
                 <g id="header_logo" transform="translate(143 353)">
                     <g id="그룹_1">
