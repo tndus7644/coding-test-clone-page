@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {Back} from "../../../svg";
 import {ContentContainer, InputStyle, PageContainer} from "../../../styled/Common";
