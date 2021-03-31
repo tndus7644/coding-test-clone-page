@@ -77,3 +77,14 @@ export const Back = () => {
         </svg>
     )
 }
+
+export const SearchIcon = () => {
+    return(
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path fill="none" d="M0 0H24V24H0z" transform="translate(-.333 .031) translate(.333 -.031)"/>
+                <path d="M12.763 11.243a7.065 7.065 0 1 0-1.518 1.52 1.271 1.271 0 0 0 .107.125l4.185 4.185a1.087 1.087 0 0 0 1.538-1.537l-4.185-4.185a1.094 1.094 0 0 0-.125-.109zm.28-4.178a5.978 5.978 0 1 1-5.978-5.978 5.978 5.978 0 0 1 5.978 5.978z" transform="translate(-.333 .031) translate(3.444 3.462)"/>
+            </g>
+        </svg>
+    )
+}

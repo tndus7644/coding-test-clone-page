@@ -6,7 +6,6 @@ export const PageContainer = styled.div`
   min-height: 100vh;
   border: 1px solid #ddd;
   margin: 40px auto;
-  padding: 0 13px;
 `;
 
 export const Overlay = styled.div`
@@ -21,6 +20,7 @@ export const Overlay = styled.div`
 `;
 
 export const ContentContainer = styled.div`
+    padding: 0 13px;
 `;
 
 export const InputStyle = styled.input`

@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ListItem = ({title, price, image}) => {
+const Item = ({title, price, image, review}) => {
 
     return (
         <Container>
             <img src={image} alt=""/>
             <Title><span>[에코백] </span>{title}</Title>
+            <img src={review} alt=""/>
             <Price>{price} <span>원</span></Price>
         </Container>
     )
@@ -26,7 +27,7 @@ const Title = styled.p`
 `;
 
 const Price = styled.p`
-  padding-top: 9px;
+  padding-top: 3px;
   font-weight: 600;
 
   span {
@@ -35,4 +36,4 @@ const Price = styled.p`
   }
 `;
 
-export default ListItem;
+export default Item;
