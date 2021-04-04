@@ -5,6 +5,7 @@ import PageNavigate from "../pages/PageNavigate";
 import List from "../pages/List";
 import Login from "../pages/Login";
 import Index from "../components/EmailForm";
+import UploadList from "../pages/UploadList";
 
 const Routes = () => {
 
@@ -15,6 +16,7 @@ const Routes = () => {
             <Route exact path={"/upload"} component={Upload}/>
             <Route exact path={"/login"} component={Login}/>
             <Route exact path={"/login/email"} component={Index}/>
+            <Route exact path={"/upload/list"} component={UploadList}/>
         </Switch>
     )
 }

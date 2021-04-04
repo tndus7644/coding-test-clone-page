@@ -1,12 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Item = ({title, price, image, review}) => {
+const Item = (props) => {
+
+    const{
+        name,
+        price,
+        image,
+        review
+    } = props
 
     return (
         <Container>
             <img src={image} alt=""/>
-            <Title><span>[에코백] </span>{title}</Title>
+            <Title><span>[에코백] </span>{name}</Title>
             <img src={review} alt=""/>
             <Price>{price} <span>원</span></Price>
         </Container>

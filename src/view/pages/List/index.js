@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ContentContainer, PageContainer} from "../../../styled/Common";
+import {ContentContainer, Header, PageContainer, Title} from "../../../styled/Common";
 import ItemList from "../../components/ItemList";
 import {SearchIcon} from "../../../svg";
 import {GlobalButton} from "../../../styled/Button.Styled";
@@ -31,17 +31,6 @@ const List = () => {
 
 const Container = styled(PageContainer)`
 
-`;
-
-const Title = styled.h1`
-  font-size: 24px;
-  font-weight: 600;
-`;
-
-const Header = styled.header`
-  padding-top: 38px;
-  display: flex;
-  justify-content: space-between;
 `;
 
 const Search = styled(GlobalButton)`

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ContentContainer} from "../../../styled/Common";
 import Layout from "../Layout";
 import Item from "./Item";
 import {NewItemData} from "./NewItemData";

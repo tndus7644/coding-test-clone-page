@@ -10,49 +10,49 @@ import ProductsStar from '../../../img/Products/ProductsStar.png'
 
 export const NewItemData = [
     {
-        title:"흰색 에코백",
+        name:"흰색 에코백",
         price:"10,000",
         image:ecoBag01,
         review:ProductsStar
     },
     {
-        title:"베이지 에코백",
+        name:"베이지 에코백",
         price:"12,000",
         image:ecoBag02,
         review:ProductsStar
     },
     {
-        title:"친환경 에코백",
+        name:"친환경 에코백",
         price:"10,000",
         image:ecoBag03,
         review:ProductsStar
     },
     {
-        title:"티릴리 에코백",
+        name:"티릴리 에코백",
         price:"10,000",
         image:ecoBag04,
         review:ProductsStar
     },
     {
-        title:"흰색 에코백",
+        name:"흰색 에코백",
         price:"10,000",
         image:ecoBag05,
         review:ProductsStar
     },
     {
-        title:"베이지 에코백",
+        name:"베이지 에코백",
         price:"12,000",
         image:ecoBag06,
         review:ProductsStar
     },
     {
-        title:"친환경 에코백",
+        name:"친환경 에코백",
         price:"10,000",
         image:ecoBag07,
         review:ProductsStar
     },
     {
-        title:"하얀색 에코백",
+        name:"하얀색 에코백",
         price:"10,000",
         image:ecoBag08,
         review:ProductsStar

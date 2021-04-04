@@ -1,11 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {ContentContainer, InputStyle, PageContainer} from "../../../styled/Common";
 import {navigate} from "../../../lib/History";
 import {Back} from "../../../svg";
 import {GlobalButton} from "../../../styled/Button.Styled";
+import {useDispatch} from "react-redux";
+import {Action} from "../../../redux/reducer";
 
 const Upload = () => {
+
+    const dispatch = useDispatch();
+
+    const [name, setName] = useState('');
+    const [price, setPrice] = useState('');
+    const [detail, setDetail] = useState('');
+
+    const onSubmit = () => {
+        navigate('/upload/list');
+        dispatch(Action.Creators.setList(
+            {
+                name: name,
+                price: price,
+                detail: detail,
+            }))
+    }
 
     return (
         <Container ClassName={"Upload"}>
@@ -15,31 +33,36 @@ const Upload = () => {
                         <Back/>
                     </Icon>
                     <Title>등록하기</Title>
-                    <Button>완료</Button>
+                    <Button onClick={onSubmit}>완료</Button>
                 </Header>
             </ContentContainer>
-            <Photo><h4>사진을 등록하세요.</h4></Photo>
+            <Photo>
+                <h4>사진을 등록하세요.</h4>
+            </Photo>
             <UploadContent>
-                <Name>
+                <form>
                     <label>
                         <h1>제품명</h1>
                         <InputStyle
                             type="text"
-                            id="name"
                             name="name"
+                            value={name}
+                            onChange={e => setName(e.target.value)}
                             placeholder="제품명 입력"/>
                     </label>
-                </Name>
-                <Price>
+                </form>
+                <form>
                     <label>
                         <h1>가격</h1>
                         <InputStyle
                             type="text"
                             id="price"
                             name="price"
+                            value={price}
+                            onChange={e => setPrice(e.target.value)}
                             placeholder="가격 입력"/>
                     </label>
-                </Price>
+                </form>
                 <Detail>
                     <label>
                         <h1>상세 설명</h1>
@@ -47,6 +70,8 @@ const Upload = () => {
                             rows={"10"}
                             cols={"50"}
                             name="detail"
+                            value={detail}
+                            onChange={e => setDetail(e.target.value)}
                             placeholder="상세 설명 입력"/>
                     </label>
                 </Detail>
@@ -103,20 +128,12 @@ const UploadContent = styled(ContentContainer)`
     margin-bottom: 10px;
   }
 
-  div {
+  form {
     margin-bottom: 24px;
   }
 `;
 
-const Name = styled.div`
-
-`;
-
-const Price = styled.div`
-
-`;
-
-const Detail = styled.div`
+const Detail = styled.form`
   height: 100%;
 
   input {

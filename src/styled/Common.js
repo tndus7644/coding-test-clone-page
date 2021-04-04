@@ -8,6 +8,18 @@ export const PageContainer = styled.div`
   margin: 40px auto;
 `;
 
+export const Title = styled.h1`
+  font-weight: 600;
+  font-size: ${props => props.theme.H1};
+`;
+
+export const Header = styled.header`
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 export const Overlay = styled.div`
   position: absolute;
   top: 0;
@@ -29,7 +41,7 @@ export const InputStyle = styled.input`
   border-radius: 8px;
   background: ${props => props.theme.GrayScale09};;
   border: 1px solid ${props => props.theme.GrayScale07};
-  color: ${props => props.theme.GrayScale06};
+  color: ${props => props.theme.GrayScale04};
 
   &:focus {
     outline: 0;
