@@ -5,10 +5,10 @@ const Layout = ({data, render}) => {
 
     return (
         <Container>
-            <Row>
+            <Row className={"Row"}>
                 {
                     data.map((item, index) =>
-                        <Col key={index}>
+                        <Col key={index} className={"Col"}>
                             {render(item)}
                         </Col>)
                 }
